@@ -5,7 +5,7 @@
          <van-icon name="search" size="18" />
           </template>
           <template #right>
-            <span><a href="">登录</a>|<a href="">注册</a></span>
+            <span><a href="" @click.prevent="onClickLeft">登录</a>|<a href="" @click.prevent="onClickRight">注册</a></span>
           </template>
         </van-nav-bar>
 
@@ -37,10 +37,10 @@ export default {
     },
     methods: {
     onClickLeft() {
-      
+      console.log("登录");
     },
     onClickRight() {
-      
+      console.log("注册");
     },
     fetchData:function(){
         var app = this;
